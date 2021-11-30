@@ -79,7 +79,7 @@ const App = () => {
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/products">
             <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
           </Route>
           <Route exact path="/cart">
@@ -89,7 +89,7 @@ const App = () => {
             <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
           </Route>
 
-          <Route path="/home" exact>
+          <Route path="/" exact>
             <Home />
             <Footer/>
           </Route>

@@ -8,14 +8,14 @@ const Hero = () => {
 	return (
 		<HeroSection>
 
-			<HeroVideo src={video1} autoPlay muted />
+			<HeroVideo src={video1} loop autoPlay muted />
 			<Container>
 				<MainHeading>La mejor tienda de tecnologia</MainHeading>
 				<HeroText>
 				Tecnología avanzada para tus necesidades · Innovación de hoy para el éxito del mañana 
 				</HeroText>
 				<ButtonWrapper>
-					<Link to="/">
+					<Link to="/products">
 						<Button>Ver productos y precios!</Button>
 					</Link>
 				</ButtonWrapper>
